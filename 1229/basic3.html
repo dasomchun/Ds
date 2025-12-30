@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: lightgray;
+        height: 100px;
+        text-align: center;
+      }
+      header h1 {
+        line-height: 100px;
+        font-size: 30px;
+      }
+      nav {
+        background-color: pink;
+        height: 50px;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        line-height: 50px;
+      }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: red;
+      }
+      section {
+        background-color: lightblue;
+        height: 300px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      aside {
+        background-color: lightgreen;
+        height: 300px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      footer {
+        background-color: black;
+        height: 500px;
+        color: white;
+        line-height: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>시맨틱 태그(의미를 가진 태그)</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="basic.html">블럭요소</a></li>
+        <li><a href="basic1.html">인라인요소</a></li>
+        <li><a href="basic2.html">인라인 블럭요소</a></li>
+        <li><a href="../1223/legacy.html">레이아웃구성(레거시)</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>섹션제목</h2>
+        <p>섹션내용</p>
+      </section>
+      <aside>
+        <h2>사이드</h2>
+        <p>사이드 내용</p>
+      </aside>
+    </main>
+    <footer>
+      <p>Footer content</p>
+    </footer>
+  </body>
+</html>
