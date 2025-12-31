@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: blue;
+        }
+        table{
+            border: 1px solid grey;
+            border-collapse: collapse;
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .left{
+            text-align: justify;
+            padding-left: 10px;
+            font-weight: 400;
+        }
+        .gray{
+            width: 120px;
+            background-color: #eee;
+        }
+        th,td{
+            border: 1px solid grey;
+            max-width: 135px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <thead>
+        <tr>
+            <th colspan="5" style="background-color: rgb(70, 67, 67); color: white; height: 60px; font-size: 20px;" >이 력 서</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th colspan="5" style="text-align: left; padding-left: 10px; background-color: gainsboro; border-left: 5px solid #333;">기본 정보</th>
+
+            </tr>
+            <tr>
+                <td class="gray">성 명</td>
+                <td class="left">홍길동</td>
+                <td class="gray">연락처</td>
+                <td class="left">010-1234-5678</td>
+                <td rowspan="4" ><img src="images/KakaoTalk_20251231_150314652.png" style="object-fit: cover; width: 100%;" alt=""></td>
+            </tr>
+            <tr>
+                <td class="gray">이메일</td>
+                <td class="left">gildong@example.com</td>
+                <td class="gray">생년월일</td>
+                <td class="left">1998.01.01</td>
+               
+            </tr>
+            <tr>
+                <td class="gray">주소</td>
+                <td colspan="3" class="left">&nbsp;서울특별시 강남구 테헤란로 123</td>
+                
+                
+            </tr>
+            <tr>
+                <td class="gray">블로그/Github</td>
+                <td colspan="3" class="left"><a href="">github.com/your-github</a></td>    
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5" style="text-align: left; padding-left: 10px; background-color: gainsboro; border-left: 5px solid #333;" >학력 사항</th>
+            </tr>
+            <tr style="font-weight: bold;">
+                <td class="gray">기간</td>
+                <td colspan="3" class="gray">학교명 및 전공</td>
+                <td class="gray">졸업여부</td>
+            </tr>
+            <tr style="font-weight: 400; height: 60px;">
+                <td>2017.03 ~<br/>
+                    2021.02
+                </td>
+                <td colspan="3" style="padding-left: 10px; text-align: left;">한국대학교 컴퓨터공학과</td>
+                <td>졸업</td>
+            </tr>
+            <tr style="font-weight: 400; height: 60px;">
+                <td>2017.03 ~<br/>
+                    2021.02
+                </td>
+                <td colspan="3" style="padding-left: 10px; text-align: left;"></td>
+                <td>졸업</td>
+            </tr>
+            <tr style="font-weight: 400; height: 60px;">
+                <td>2017.03 ~<br/>
+                    2021.02
+                </td>
+                <td colspan="3" style="padding-left: 10px; text-align: left;"></td>
+                <td>졸업</td>
+            </tr>
+            <tr>
+                <th colspan="5" style="text-align: left; padding-left: 10px; background-color: gainsboro; border-left: 5px solid #333;" >경력 사항</th>
+            </tr>
+             <tr style="font-weight: bold;">
+                <td class="gray">근무 기간</td>
+                <td colspan="3" class="gray">회사명</td>
+                <td class="gray">업무내용</td>
+            </tr>
+             <tr style="font-weight: 400; height: 60px;">
+                <td>2017.03 ~<br/>
+                    2021.02
+                </td>
+                <td colspan="3" style="padding-left: 10px; text-align: left;"></td>
+                <td></td>
+            </tr>
+            <tr style="font-weight: 400; height: 60px;">
+                <td><br/>
+                    
+                </td>
+                <td colspan="3" style="padding-left: 10px; text-align: left;"></td>
+                <td></td>
+            </tr>
+            <tr style="font-weight: 400; height: 60px;">
+                <td><br/>
+                    
+                </td>
+                <td colspan="3" style="padding-left: 10px; text-align: left;"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
