@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1136px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header h2 {
+  font-size: 20px;
+  color: #2f3438;
+}
+.header p {
+  color: #0aa5ff;
+  font-weight: bold;
+}
+
+.body {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.wbox {
+  /* float: left; */
+  gap: 20px;
+  width: 365.33px;
+  height: 351.56px;
+  cursor: pointer;
+}
+.wbox_img {
+  width: 365px;
+  height: 243px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.wbox_img img {
+  width: 365px;
+  height: 243px;
+
+  transition: all 0.3s;
+}
+
+.wbox:hover .wbox_img img {
+  width: 100%;
+  transform: scale(1.05);
+}
+
+.body .text2 {
+  margin-top: 5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 👈 3줄 */
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}

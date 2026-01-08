@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.headtxt {
+  margin-top: 100px;
+  text-align: center;
+}
+.headtxt h1 {
+  font-size: 43px;
+}
+.mainbody {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.bodycard {
+  border: 1px solid #333;
+  width: 100%;
+  height: 387px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  box-sizing: border-box;
+  align-items: center; /* 자식 요소들을 가로 가운데 정렬 */
+  justify-content: flex-start;
+}
+.mainimage {
+  margin-top: 50px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-color: #003e73;
+  margin: 20px 0;
+}
+.bodycard h3 {
+  font-size: 20px;
+  color: #003e73;
+  margin-bottom: 10px;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bottom p {
+  line-height: 30px;
+  font-size: 20px;
+  color: #003e73;
+  margin-bottom: 50px;
+}
+
+.bottom a {
+  width: 320px;
+  padding: 19px 10px;
+  margin: 0 auto;
+  background-color: #003e73;
+  display: block;
+  color: white;
+}

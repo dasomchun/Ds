@@ -1,0 +1,30 @@
+#container {
+  width: 600px;
+  margin: 0 auto;
+  /* border: 1px solid #333; */
+  border: none;
+}
+
+div {
+  border: 1px dotted #333;
+  margin: 20px;
+  padding: 20px;
+}
+
+#description {
+  border-radius: 30px 30px 0 0;
+}
+#package {
+  border-radius: 0 0 30px 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+
+th,
+td {
+  padding: 7px 0;
+  border: 1px solid #333;
+}
