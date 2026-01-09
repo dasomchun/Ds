@@ -33,7 +33,7 @@
   flex-direction: column;
   padding: 0 15px;
   box-sizing: border-box;
-  align-items: center; /* 자식 요소들을 가로 가운데 정렬 */
+  align-items: center; 
   justify-content: flex-start;
 }
 .mainimage {
@@ -64,7 +64,7 @@
   line-height: 30px;
   font-size: 20px;
   color: #003e73;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .bottom a {
@@ -74,4 +74,5 @@
   background-color: #003e73;
   display: block;
   color: white;
+  text-decoration: none;
 }

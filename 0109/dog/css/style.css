@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  margin-top: 50px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  background-color: #f46075;
+}
+header h1 {
+  margin-left: 50px;
+  color: white;
+}
+
+header .logo {
+  margin-right: 20px;
+}
+nav {
+  height: 60px;
+  background-color: #ccc;
+}
+
+nav ul {
+  line-height: 60px;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+}
+nav ul li {
+  width: 90%;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #f46075;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+}
+main {
+  height: 490px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  width: 70%;
+  background-color: skyblue;
+}
+section h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+.card h3 {
+  background: url(../img/bg.png) no-repeat;
+  padding-left: 30px;
+}
+
+.cardall {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  width: 270px;
+  border: 1px solid #333;
+  text-align: justify;
+  padding: 10px 10px;
+}
+.card p {
+  font-size: 13px;
+}
+
+aside {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: yellow;
+}
+aside h2 {
+  margin-top: 20px;
+}
+
+.imgbox {
+  margin-top: 10px;
+
+  height: 125px;
+}
+
+.imgbox img {
+  margin-bottom: 10px;
+  width: 80%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+}
