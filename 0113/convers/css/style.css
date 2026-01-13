@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 1440px;
+  height: 500px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex: 1 1 280px;
+  gap: 20px;
+}
+
+.content .box {
+  height: 420px;
+}
+.imgbox {
+  position: relative;
+  overflow: hidden; /* 이미지를 벗어나는 부분 숨김 */
+}
+
+.imgbox img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.win2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 5;
+  transition: all 0.2s;
+}
+.win2:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box1:hover .imgbox img {
+  content: url("../images/img1_.jpg");
+}
+.box2:hover .imgbox img {
+  content: url("../images/img2_.jpg");
+}
+.box3:hover .imgbox img {
+  content: url("../images/img3_.png");
+}
+.box4:hover .imgbox img {
+  content: url("../images/img4_.jpg");
+}
+.box5:hover .imgbox img {
+  content: url("../images/img5_.jpg");
+}
+.wish-icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  z-index: 10;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.wish-icon:hover {
+  transform: scale(1.3);
+}
+
+.box p {
+  line-height: 25px;
+}
+.box p:hover {
+  cursor: pointer;
+}
+
+.txt1 {
+  font-weight: bold;
+  font-size: 15px;
+}
+.txt1:hover {
+  text-decoration: underline;
+}
+
+.txt2 .t1 {
+  color: red;
+}
+
+.txt2 .t3 {
+  font-size: 14px;
+  color: gray;
+}
+
+.txt2 .t4 {
+  display: block;
+  margin: 5px 0;
+  font-weight: bold;
+  color: green;
+  font-size: 14px;
+}
+.txt3 .tt1 {
+  font-size: 14px;
+}
+
+.txt3 .tt2 {
+  font-size: 14px;
+  color: gray;
+}
