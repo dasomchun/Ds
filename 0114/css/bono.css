@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bono {
+  width: 450px;
+  height: 450px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.face {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #4164fa;
+  border: 10px solid #333;
+}
+
+.eye {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  top: 150px;
+}
+
+.left {
+  left: 100px;
+}
+.right {
+  right: 100px;
+}
+
+.nose {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  top: 250px;
+  left: 46%;
+  z-index: 1;
+}
+
+.mouse {
+  position: absolute;
+  width: 70px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid #333;
+  top: 260px;
+}
+
+.left1 {
+  left: 150px;
+  transform: rotate(45deg);
+}
+.right1 {
+  right: 150px;
+  transform: rotate(-45deg);
+}
+
+.left-line {
+  position: absolute;
+}
+.line {
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #333;
+  top: 280px;
+  left: 90px;
+}
+
+.leftline1 {
+  transform-origin: right center;
+  transform: rotate(25deg);
+}
+
+.leftline2 {
+  top: 310px;
+}
+
+.leftline3 {
+  transform-origin: right center;
+  transform: rotate(-25deg);
+  top: 340px;
+}
+
+.right-line {
+  position: relative;
+}
+.line1 {
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #333;
+  top: 280px;
+  left: 250px;
+}
+
+.rightline1 {
+  transform: rotate(-25deg);
+  transform-origin: left center;
+}
+.rightline2 {
+  top: 310px;
+}
+.rightline3 {
+  transform-origin: left center;
+  transform: rotate(25deg);
+  top: 340px;
+}
