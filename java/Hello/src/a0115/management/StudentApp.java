@@ -1,4 +1,4 @@
-package a0114.management1;
+package a0115.management;
 
 import java.util.Scanner;
 
@@ -77,22 +77,41 @@ public class StudentApp {
             age = Integer.parseInt(scanner.nextLine());
         } catch (Exception e) {
             System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
         }
         System.out.print("전공: ");
         String major = scanner.nextLine();
-       
+
         System.out.print("국어: ");
-        int kor = Integer.parseInt(scanner.nextLine());
+        int kor = 0;
+          try {
+            kor = Integer.parseInt(scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
+        }
 
         System.out.print("영어: ");
-        int eng = Integer.parseInt(scanner.nextLine());
+        int eng = 0;
+          try {
+            eng = Integer.parseInt(scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
+        }
 
         System.out.print("수학: ");
-        int math = Integer.parseInt(scanner.nextLine());
+        int math = 0;
+          try {
+            math = Integer.parseInt(scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
+        }
 
-        
         Student newStudent = new Student(studentId, name, age, major, kor, eng, math);
-
+        // Student newStudent = new Student();
+        // newStudent.setStudentId(studentId); 이런식으로 7개 만들어도 됨
         for(int i=0;i < studentsArray.length;i++){
             if(studentsArray[i] == null){
                studentsArray[i] =  newStudent;
@@ -111,17 +130,18 @@ public class StudentApp {
            for(int i=0;i < studentsArray.length;i++){
             if(studentsArray[i] != null){
                 Student student = studentsArray[i];
-                System.out.printf("%s %s %d %s 국어:%d 영어:%d 수학:%d 총점:%d 평균:%.2f\n",
-                    student.getStudentId(),
-                    student.getName(), 
-                    student.getAge(), 
-                    student.getMajor(),
-                    student.getKor(),
-                    student.getEng(),
-                    student.getMath(),
-                    student.getTotal(),  
-                     student.getAverage() 
-                );
+                // System.out.printf("%s %s %d %s 국어: %d, 영어: %d, 수학: %d, 총점: %d, 평균:%.2f\n",
+                //     student.getStudentId(),
+                //     student.getName(), 
+                //     student.getAge(), 
+                //     student.getMajor(),
+                //     student.getKor(),
+                //     student.getEng(),
+                //     student.getMath(),
+                //     student.getTotal(),
+                //     student.getAvg()
+                // );
+                System.out.println(student);
             }
         }
     }
@@ -140,6 +160,7 @@ public class StudentApp {
         }else{
             System.out.println("학생을 찾았습니다.");
              System.out.printf("학번:%s, 이름:%s, 나이:%d, 전공:%s\n국어: %d, 영어: %d, 수학: %d, 총점: %d, 평균: %.2f\n",
+                                  
                     student.getStudentId(),
                     student.getName(), 
                     student.getAge(), 
@@ -148,7 +169,7 @@ public class StudentApp {
                     student.getEng(),
                     student.getMath(),
                     student.getTotal(),
-                    student.getAverage()
+                    student.getAvg()
                 );
         }
     }
@@ -177,15 +198,31 @@ public class StudentApp {
         }
         System.out.print("전공(수정): ");
         String major = scanner.nextLine();
-           System.out.print("국어: ");
-        int kor = Integer.parseInt(scanner.nextLine());
 
-        System.out.print("영어: ");
-        int eng = Integer.parseInt(scanner.nextLine());
-
-        System.out.print("수학: ");
-        int math = Integer.parseInt(scanner.nextLine());    
-
+         System.out.print("국어: ");
+        int kor = 0;
+        try{
+            kor = Integer.parseInt(scanner.nextLine());
+        }catch(Exception e){
+            System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
+        }
+         System.out.print("영어: ");
+        int eng = 0;
+        try{
+            eng = Integer.parseInt(scanner.nextLine());
+        }catch(Exception e){
+            System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
+        }
+         System.out.print("수학: ");
+        int math = 0;
+        try{
+            math = Integer.parseInt(scanner.nextLine());
+        }catch(Exception e){
+            System.out.println("잘못된 입력입니다. 숫자를 입력하세요");
+            return;
+        }
 
         // student 정보수정
         student.setName(name);
