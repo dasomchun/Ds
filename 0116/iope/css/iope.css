@@ -60,7 +60,7 @@ a {
 }
 .opacitytop {
   position: absolute;
-  top: 30%;
+  top:25%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -76,6 +76,8 @@ a {
   font-size: 30px;
 }
 .opacitytop .btn a {
+  display: block;
+  margin-top:30px;
   font-size: 16px;
   border: 1px solid white;
   border-radius: 25px;
@@ -99,9 +101,12 @@ a {
 }
 
 .opacity p {
+  opacity: 0;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
+  transform: translateY(20px);
+  transition: all 0.5s;
 }
 .box2,
 .box3 {
@@ -121,13 +126,19 @@ a {
   height: 100%;
 }
 .btn1 {
-  margin-top: 15px;
+  position: relative;
+  margin-top:30px;
   border: 1px solid white;
   border-radius: 25px;
-  transition: 0.3s;
-  padding: 10px 25px;
+  transition: all 0.5s;
+  padding: 10px 30px;
+  overflow: hidden;
 }
-
+.btn1 a{
+  display: inline-block;
+  transition: all 0.5s;
+  font-size: 16px;
+}
 .btn:hover a {
   color: #002d96;
 }
@@ -135,12 +146,14 @@ a {
 .bottom {
   position: absolute;
   bottom: 20px;
-  left: 10%;
-  width: 100%;
-  text-align: justify;
+  left:5%;
+  width: 90%;
+  text-align: left;
   color: white;
   font-size: 14px;
   line-height: 25px;
+  transform: translateY(0);
+  transition: all 0.5s;
 }
 .box5 {
   position: absolute;
@@ -158,5 +171,47 @@ a {
 }
 .bottom span {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
+}
+.box::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.box:hover::before{
+
+  opacity: 0.5;
+}
+.box1::before{
+  display: none;
+}
+
+.box:hover .opacity p{
+  opacity: 1;
+  transform: translateY(0);
+}
+.box:hover .btn1{
+  transition-delay: 0.15s;
+}
+.btn1:hover a{
+  transform: translateX(-10px);
+}
+.btn1::after {
+  position: absolute;
+  content: '→';       
+  transform: translateX(5px);  
+  opacity: 0;      
+  transition: all 0.5s;
+}
+.btn1:hover::after {
+ transform: translateX(-5px);       
+  opacity: 1;        
+}
+.box:hover .bottom{
+  transform: translateY(20px);
+  opacity: 0;
 }
