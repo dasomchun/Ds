@@ -16,7 +16,7 @@ public class Switch2 {
             default -> "잘못된 요일";
         
               
-        }
+        };
     
     
     
